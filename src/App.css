@@ -1,0 +1,50 @@
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 10px;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.container {
+  width: 100vw;
+  max-width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.cell {
+  background-color: white;
+  outline: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 0;
+  margin: 0;
+}
+span {
+  color: black;
+  font-size: 5em;
+}
+.hoverable:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
